@@ -1,0 +1,25 @@
+
+
+============================== 2022-11-05 18:05:41.091105 | 05f8ede9-9ec4-4440-9eef-21fdf6d9c6da ==============================
+18:05:41.091110 [info ] [MainThread]: Running with dbt=1.1.0
+18:05:41.091317 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/ariannaparisi/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+18:05:41.091395 [debug] [MainThread]: Tracking: tracking
+18:05:41.101899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f2bd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f2bca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f2b910>]}
+18:05:50.658341 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-postgres/1.1.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+18:05:55.858017 [info ] [MainThread]: 
+Your new dbt project "serie_a_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+18:05:55.858392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f22d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f22d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f22520>]}

@@ -1,0 +1,55 @@
+with source as (
+    select *
+    from {{ source('seriea','results') }}
+)
+, only_useful_bets as (
+    select "date",
+    "time",
+    HomeTeam,
+    AwayTeam,
+    FTHG,
+    FTAG,
+    FTR,
+    HTHG,
+    HTAG,
+    HTR,
+    HS as HomeScore,
+    "AS" as AwayScore,
+    HST,
+    AST,
+    HF,
+    AF,
+    HC,
+    AC,
+    HY,
+    AY,
+    HR,
+    AR,
+    B365H,
+    B365D,
+    B365A,
+    BWH,
+    BWD,
+    BWA,
+    IWH,
+    IWD,
+    IWA,
+    PSH,
+    PSD,
+    PSA,
+    WHH,
+    WHD,
+    WHA,
+    VCH,
+    VCD,
+    VCA,
+    MaxH,
+    MaxD,
+    MaxA,
+    AvgH,
+    AvgD,
+    AvgA
+   from source
+)
+select *
+from only_useful_bets

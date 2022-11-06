@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: home_betting
+    columns:
+      - name: HomeTeam
+        tests:
+          - not_null
+      - name: Date
+        tests:
+          - unique
+      - name: HomeTeam
+        tests:
+          - accepted_values:
+              values: ['Milan', 'Sampdoria', 'Lecce', 'Monza', 'Fiorentina', 'Lazio',
+                      'Salernitana', 'Spezia', 'Verona', 'Juventus', 'Torino', 'Udinese',
+                      'Inter', 'Sassuolo', 'Empoli', 'Napoli', 'Atalanta', 'Bologna',
+                      'Roma', 'Cremonese']

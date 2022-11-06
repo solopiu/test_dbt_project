@@ -1,0 +1,15 @@
+# # Source tables refer to tables loaded into the warehouse by an EL process. Since dbt did not create them, we have to define them. This definition enables referring to the source tables using the source function. For e.g. {{ source('warehouse', 'orders') }} refers to the warehouse.orders table. 
+version: 2
+
+sources:
+  - name: seriea
+    description: Data from application database, brought in by an EL process.
+    tables:
+      - name: results
+        columns:
+        - name: HomeTeam
+          tests:
+            - not_null
+        - name: AwayTeam
+          tests:
+            - not_null

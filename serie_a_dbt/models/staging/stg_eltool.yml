@@ -1,0 +1,10 @@
+# We can also define tests to ensure that the source data is clean.
+
+version: 2
+
+models:
+  - name: stg_eltool__results
+    columns:
+      - name: HomeTeam
+        tests:
+          - not_null
